@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tic Tac Toe with Bot</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<h1>Tic Tac Toe</h1>
+
+<div id="localTime" class="glowing-time"></div>
+
+<div>
+<label><input type="radio" name="mode" value="pvp" /> Player vs Player</label>
+<label><input type="radio" name="mode" value="bot" checked /> Player vs Bot</label>
+  <select id="botLevel" disabled>
+    <option value="easy">Easy</option>
+    <option value="hard">Hard</option>
+    <option value="impossible">Impossible</option>
+  </select>
+</div>
+
+<div id="board"></div>
+<button onclick="resetGame()">Reset Game</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
